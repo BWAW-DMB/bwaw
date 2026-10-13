@@ -1,0 +1,41 @@
+/* Events page — layout specific to this page. Shared styles live in css/styles.css. */
+
+#m .event-feature-meta {
+  font-size: 13px;
+  opacity: 0.9;
+  display: block;
+  margin-bottom: 18px;
+}
+
+#m .event-feature-btn {
+  background: #fff;
+  color: var(--pk);
+  margin-top: 10px;
+}
+
+#m .event-feature-image {
+  background-image: url("../../assets/sponsorship-night.jpg");
+}
+
+#m .events-story-track {
+  height: 440vh;
+}
+
+#m .events-story-columns {
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+#m .upcoming-title {
+  padding: 30px 0 10px;
+}
+
+#m .past-events-tag {
+  background: #fde4c8;
+  color: #b86b00;
+  align-self: flex-start;
+}
+
+#m .past-events-intro {
+  font-weight: 500;
+}

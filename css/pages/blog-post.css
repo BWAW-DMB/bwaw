@@ -1,0 +1,36 @@
+/* Building Homes to Love: The Local Story Behind Hadar Homes page — layout specific to this page. Shared styles live in css/styles.css. */
+
+#m .post-hero {
+  min-height: 210px;
+}
+
+#m .post-breadcrumb {
+  width: 100%;
+  text-align: left;
+  font-size: 11px;
+  align-self: flex-start;
+}
+
+#m .post-body {
+  padding-top: 30px;
+}
+
+#m .post-comments {
+  margin-top: 50px;
+}
+
+#m .remember-label {
+  font-size: 10px;
+}
+
+#m .remember-check {
+  width: auto;
+}
+
+#m .post-title {
+  position: absolute;
+  margin: 0;
+  align-self: center;
+  max-width: 600px;
+  font-size: clamp(24px, 3.5vw, 32px);
+}

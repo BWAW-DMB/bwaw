@@ -1,0 +1,63 @@
+/* Get Involved page — layout specific to this page. Shared styles live in css/styles.css. */
+
+#m .involved-photo {
+  --involved-image: url("../assets/2026-Committee-Members.png");
+}
+
+#m .join-bwaw-btn {
+  background: #fff;
+  color: var(--pk);
+  padding: 14px 32px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#m .chamber-story-track {
+  height: 440vh;
+}
+
+#m .chamber-columns {
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+#m .chamber-visual-text {
+  font-size: clamp(34px, 5.4vw, 64px);
+  color: var(--pk);
+  font-weight: 700;
+}
+
+#m .chamber-heading {
+  color: var(--pl);
+  font-size: clamp(22px, 2.8vw, 30px);
+}
+
+#m .chamber-lead {
+  font-size: 13px;
+  margin-top: 14px;
+}
+
+#m .chamber-text-spaced {
+  margin: 14px 0;
+  font-size: 13px;
+  color: var(--mu);
+}
+
+#m .chamber-text {
+  font-size: 13px;
+  color: var(--mu);
+}
+
+#m .young-business-subheading {
+  font-weight: 500;
+  font-size: clamp(17px, 2vw, 22px);
+}
+
+#m .young-business-heading {
+  font-size: clamp(24px, 3.2vw, 36px);
+  margin: 8px 0 12px;
+}
+
+#m .young-business-text {
+  font-size: 13px;
+}

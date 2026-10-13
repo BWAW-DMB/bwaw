@@ -1,0 +1,60 @@
+/* Home page — layout specific to this page. Shared styles live in css/styles.css. */
+
+#m .story-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+#m .story-heading {
+  color: #333;
+}
+
+#m .story-text {
+  margin: 14px 0;
+}
+
+#m .story-note {
+  font-size: 12px;
+}
+
+#m .story-copy {
+  margin: 12px 0;
+}
+
+#m .story-subheading {
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+#m .story-small {
+  font-size: 12.5px;
+}
+
+#m .story-welcome {
+  margin-top: 14px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#m .featured-event-wrap {
+  text-align: center;
+}
+
+#m .featured-event-card {
+  grid-template-columns: 300px 1fr;
+  padding: 60px 0;
+}
+
+#m .featured-event-title {
+  margin: 6px 0;
+}
+
+#m .featured-event-text {
+  font-size: 11.5px;
+  color: #666;
+  margin: 12px 0;
+}
+
+#m .purpose-columns {
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+}

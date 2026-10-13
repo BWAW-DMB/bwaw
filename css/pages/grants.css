@@ -1,0 +1,40 @@
+/* Grants page — layout specific to this page. Shared styles live in css/styles.css. */
+
+#m .grant-lead {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+#m .grant-copy {
+  color: var(--mu);
+  margin: 12px 0 18px;
+}
+
+#m .grant-terms {
+  text-align: center;
+}
+
+#m .grant-story-track {
+  height: 360vh;
+}
+
+#m .grant-story-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+#m .layer-0 {
+  z-index: 0;
+}
+
+#m .layer-1 {
+  z-index: 1;
+}
+
+#m .layer-2 {
+  z-index: 2;
+}
