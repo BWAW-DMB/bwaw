@@ -89,9 +89,9 @@
       </div>
     </header>
     <main id="m">
-      <div class="hero post-hero">
+      <div class="hero post-hero blog-photo post-hero-photo">
         <div class="post-breadcrumb">
-          <a href="blog.html">Behind the Business Blogs</a> &nbsp;/&nbsp; Building Home to Love
+          <a href="blog.html">Behind the Business Blogs</a> &nbsp;/&nbsp; Building Homes to Love
         </div>
         <h1 class="post-title">Building Homes to Love: The Local Story Behind Hadar Homes</h1>
       </div>
@@ -268,21 +268,76 @@
             years to come.
           </p>
         </div>
-        <span class="soc">Connect with Hadar on Social Media &nbsp; f ◎ in</span>
+        <span class="soc"
+          >Connect with Hadar on Social Media:<a
+            href="https://www.facebook.com/HadarHomes"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Hadar Homes on Facebook (opens in a new tab)"
+            >Facebook</a
+          ><a
+            href="https://www.instagram.com/hadar_homes/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Hadar Homes on Instagram (opens in a new tab)"
+            >Instagram</a
+          ><a
+            href="https://www.linkedin.com/company/hadar-homes-to-love"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Hadar Homes on LinkedIn (opens in a new tab)"
+            >LinkedIn</a
+          ></span
+        >
       </div>
       <section class="ct post-comments">
         <div class="w">
           <div>
             <h2>Leave a Reply</h2>
-            <small><b>Your email address will not be published. Required fields are marked</b></small>
+            <small><b>Your email address will not be published. Required fields are marked *</b></small>
           </div>
           <form data-demo-form>
             <div class="f">
-              <label>Comment</label><textarea rows="4" placeholder="you@example.com"></textarea>
+              <label for="reply-comment">Comment *</label
+              ><textarea
+                id="reply-comment"
+                name="comment"
+                rows="4"
+                placeholder="Share your thoughts on this story…"
+                required=""
+              ></textarea>
             </div>
-            <div class="f"><label>Name</label><input placeholder="you@example.com" /></div>
-            <div class="f"><label>Email</label><input placeholder="you@example.com" /></div>
-            <div class="f"><label>Website</label><input placeholder="you@example.com" /></div>
+            <div class="f">
+              <label for="reply-name">Name *</label
+              ><input
+                id="reply-name"
+                name="name"
+                autocomplete="name"
+                placeholder="Your full name"
+                required=""
+              />
+            </div>
+            <div class="f">
+              <label for="reply-email">Email *</label
+              ><input
+                id="reply-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required=""
+              />
+            </div>
+            <div class="f">
+              <label for="reply-website">Website</label
+              ><input
+                id="reply-website"
+                name="website"
+                type="url"
+                autocomplete="url"
+                placeholder="https://www.yourbusiness.com.au"
+              />
+            </div>
             <div class="f">
               <label class="remember-label"
                 ><input class="remember-check" type="checkbox" /> Save my name, email, and website in this
@@ -324,7 +379,27 @@
             <span
               >© Copyright 2026 Business Women Albury Wodonga - Business Wodonga - Albury Business
               Connect</span
-            ><span>f &nbsp; ◎ &nbsp; in</span>
+            ><span class="social-links"
+              ><a
+                href="https://www.facebook.com/BusinessWomenAW"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook (opens in a new tab)"
+                >Facebook</a
+              ><a
+                href="https://www.instagram.com/businesswomenaw"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram (opens in a new tab)"
+                >Instagram</a
+              ><a
+                href="https://au.linkedin.com/company/business-women-albury-wodonga"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn (opens in a new tab)"
+                >LinkedIn</a
+              ></span
+            >
           </div>
         </div>
       </footer>

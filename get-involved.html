@@ -95,15 +95,15 @@
           class="bgl has-photo involved-photo"
           id="bgl"
           role="img"
-          aria-label="BWAW committee members"
+          aria-label="BWAW members at the 2026 Welcome Night"
         ></div>
         <div class="w">
           <div>
             <h1>
               <span class="wd" style="--i: 0">How</span> <span class="wd" style="--i: 1">to</span>
-              <span class="wd" style="--i: 2">become</span> <span class="wd" style="--i: 3">a</span
-              ><br /><span class="wd" style="--i: 4">member</span> <span class="wd" style="--i: 5">of</span>
-              <span class="wd" style="--i: 6">BWAW?</span>
+              <span class="wd" style="--i: 2">join</span> <span class="wd" style="--i: 3">the</span
+              ><br /><span class="wd" style="--i: 4">BWAW</span>
+              <span class="wd" style="--i: 5">Community</span>
             </h1>
             <p class="ia" style="--i: 5">
               As a member of either Albury Business Connect or Business Wodonga, or as an employee of a
@@ -112,7 +112,7 @@
             <a class="btn ia join-bwaw-btn" style="--i: 6" href="contact.html">Join BWAW</a>
           </div>
           <div class="box ia sl" style="--i: 4">
-            <b>This membership grants you access to:</b>
+            <b>Being a member of ABC or Business Wodonga:</b>
             <ul class="ck">
               <li>exclusive events</li>
               <li>networking opportunities</li>
@@ -160,18 +160,43 @@
                 required=""
               />
             </div>
+            <div class="f">
+              <label for="join-phone">Phone number</label
+              ><input id="join-phone" name="phone" type="tel" autocomplete="tel" placeholder="04XX XXX XXX" />
+            </div>
             <fieldset>
-              <legend>I want to join as</legend>
+              <legend>I want to join</legend>
               <div class="join-choice-grid">
                 <label class="join-choice"
-                  ><input type="radio" name="join_as" value="member" required="" /><span>Member</span></label
+                  ><input type="radio" name="join_as" value="business-wodonga-member" required="" /><span
+                    >Member of Business Wodonga</span
+                  ></label
                 ><label class="join-choice"
-                  ><input type="radio" name="join_as" value="volunteer" /><span>Volunteer</span></label
+                  ><input type="radio" name="join_as" value="albury-business-connect-member" /><span
+                    >Member of Albury Business Connect</span
+                  ></label
+                ><label class="join-choice"
+                  ><input type="radio" name="join_as" value="committee" /><span>Committee</span></label
                 ><label class="join-choice"
                   ><input type="radio" name="join_as" value="sponsor" /><span>Sponsor</span></label
                 >
               </div>
             </fieldset>
+            <div class="f mailing-field">
+              <label class="mailing-option" for="join-mailing"
+                ><input
+                  type="checkbox"
+                  id="join-mailing"
+                  name="mailing_list"
+                  value="yes"
+                  aria-describedby="join-mailing-caption"
+                /><span>Join the mailing list</span></label
+              >
+              <p class="mailing-caption" id="join-mailing-caption">
+                Get BWAW event invitations, news and member stories in your inbox. You can unsubscribe at any
+                time.
+              </p>
+            </div>
             <div class="f">
               <button class="btn" data-label="Send my interest" data-success="Thanks for your interest">
                 Send my interest
@@ -264,6 +289,13 @@
                   creating networking and professional development opportunities for young professionals and
                   business owners between ages of 18 and 40 in our region.
                 </p>
+                <a
+                  class="vw"
+                  href="https://www.youngbusinessedge.com.au/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Website</a
+                >
               </div>
             </div>
           </div>
@@ -326,7 +358,27 @@
             <span
               >© Copyright 2026 Business Women Albury Wodonga - Business Wodonga - Albury Business
               Connect</span
-            ><span>f &nbsp; ◎ &nbsp; in</span>
+            ><span class="social-links"
+              ><a
+                href="https://www.facebook.com/BusinessWomenAW"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook (opens in a new tab)"
+                >Facebook</a
+              ><a
+                href="https://www.instagram.com/businesswomenaw"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram (opens in a new tab)"
+                >Instagram</a
+              ><a
+                href="https://au.linkedin.com/company/business-women-albury-wodonga"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn (opens in a new tab)"
+                >LinkedIn</a
+              ></span
+            >
           </div>
         </div>
       </footer>

@@ -1,7 +1,7 @@
 /* Get Involved page — layout specific to this page. Shared styles live in css/styles.css. */
 
 #m .involved-photo {
-  --involved-image: url("../assets/2026-Committee-Members.png");
+  --involved-image: url("../assets/welcome-night-2026.png");
 }
 
 #m .join-bwaw-btn {
@@ -50,7 +50,7 @@
 
 #m .young-business-subheading {
   font-weight: 500;
-  font-size: clamp(17px, 2vw, 22px);
+  font-size: 24px !important;
 }
 
 #m .young-business-heading {

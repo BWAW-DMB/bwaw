@@ -140,10 +140,21 @@
                 />
               </div>
               <fieldset>
-                <legend>I want to join as</legend>
+                <legend>I want to join</legend>
                 <div class="join-choice-grid">
                   <label class="join-choice"
-                    ><input type="radio" name="contact_join_as" value="committee" required="" /><span
+                    ><input
+                      type="radio"
+                      name="contact_join_as"
+                      value="business-wodonga-member"
+                      required=""
+                    /><span>Member of Business Wodonga</span></label
+                  ><label class="join-choice"
+                    ><input type="radio" name="contact_join_as" value="albury-business-connect-member" /><span
+                      >Member of Albury Business Connect</span
+                    ></label
+                  ><label class="join-choice"
+                    ><input type="radio" name="contact_join_as" value="committee" /><span
                       >Committee</span
                     ></label
                   ><label class="join-choice"
@@ -151,6 +162,21 @@
                   >
                 </div>
               </fieldset>
+              <div class="f mailing-field">
+                <label class="mailing-option" for="contact-mailing"
+                  ><input
+                    type="checkbox"
+                    id="contact-mailing"
+                    name="mailing_list"
+                    value="yes"
+                    aria-describedby="contact-mailing-caption"
+                  /><span>Join the mailing list</span></label
+                >
+                <p class="mailing-caption" id="contact-mailing-caption">
+                  Get BWAW event invitations, news and member stories in your inbox. You can unsubscribe at
+                  any time.
+                </p>
+              </div>
               <div class="f">
                 <button class="btn" data-label="Send my interest" data-success="Thanks for your interest">
                   Send my interest
@@ -299,7 +325,27 @@
             <span
               >© Copyright 2026 Business Women Albury Wodonga - Business Wodonga - Albury Business
               Connect</span
-            ><span>f &nbsp; ◎ &nbsp; in</span>
+            ><span class="social-links"
+              ><a
+                href="https://www.facebook.com/BusinessWomenAW"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook (opens in a new tab)"
+                >Facebook</a
+              ><a
+                href="https://www.instagram.com/businesswomenaw"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram (opens in a new tab)"
+                >Instagram</a
+              ><a
+                href="https://au.linkedin.com/company/business-women-albury-wodonga"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn (opens in a new tab)"
+                >LinkedIn</a
+              ></span
+            >
           </div>
         </div>
       </footer>

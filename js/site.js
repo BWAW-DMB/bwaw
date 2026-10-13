@@ -45,7 +45,7 @@ window.BWAW = window.BWAW || {};
 
   /* Upcoming events: clamp long descriptions with a "See more" button. */
   function setupEventDescriptions(root) {
-    root.querySelectorAll(".up .ev p").forEach((p) => {
+    root.querySelectorAll(".up .ev p:not(.event-copy-full)").forEach((p) => {
       p.classList.add("event-copy-clamp");
       requestAnimationFrame(() => {
         if (p.scrollHeight <= p.clientHeight + 2) return;
