@@ -6230,3 +6230,327 @@ footer :focus-visible {
 #m .post .soc a:focus-visible {
   color: #7a1050;
 }
+
+/* Committee: three cards per row on larger screens, with text sized to fit */
+@media (min-width: 901px) {
+  #m .cm {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  #m .cm .pw {
+    aspect-ratio: 1.1;
+  }
+
+  #m .cm .mem h3 {
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+  }
+
+  #m .cm .ov p {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+
+  #m .cm .ov a {
+    font-size: 13px;
+  }
+}
+/* Home: the two featured events stacked in one column, descriptions limited to 5 lines */
+#m .featured-event.featured-events {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+  max-width: 980px;
+  min-height: 0;
+  margin: 0 auto;
+  padding: 64px 24px !important;
+}
+
+#m .featured-events > .ev {
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr) !important;
+  gap: 40px;
+  align-items: center;
+  min-height: 0 !important;
+  padding: 0 !important;
+}
+
+#m .featured-events .ev .event-photo {
+  height: auto;
+  aspect-ratio: 4/5;
+}
+
+#m .featured-events .ev h2 {
+  margin: 8px 0 6px;
+}
+
+#m .featured-events .ev p.featured-event-copy {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  margin: 12px 0 16px !important;
+  color: #555;
+  line-height: 1.5 !important;
+}
+
+@media (max-width: 960px) {
+  #m .featured-event.featured-events {
+    gap: 48px;
+    padding: 40px 22px !important;
+  }
+
+  #m .featured-events > .ev {
+    grid-template-columns: minmax(0, 240px) minmax(0, 1fr) !important;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  #m .featured-events > .ev {
+    grid-template-columns: 1fr !important;
+    gap: 18px;
+  }
+
+  #m .featured-events .ev .event-photo {
+    max-width: 360px;
+  }
+}
+
+/* Committee page: application status note under the apply button */
+#m .apply-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0 0 !important;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #f3eef4;
+  color: #4a454f;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+#m .apply-status span {
+  color: #7a1050;
+  font-size: 16px;
+  line-height: 1;
+}
+/* Get involved: "View Website" link buttons */
+#m a.vw-btn {
+  margin-top: 18px;
+}
+/* Get involved: keep the Future Leaders logo at its sharp native size */
+#m .chamber-logo.future-leaders-logo {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+}
+/* Home: all partner logos shown together, static and evenly spread */
+#m .trusted-logos.static-logos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: 32px 56px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+#m .static-logos .trust-logo {
+  width: 100%;
+  max-width: 170px;
+  height: 84px;
+  min-height: 0;
+  padding: 6px;
+  background: transparent;
+}
+
+#m .static-logos .trust-logo img {
+  width: 100% !important;
+  height: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 900px) {
+  #m .trusted-logos.static-logos {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  #m .trusted-logos.static-logos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 24px;
+  }
+
+  #m .static-logos .trust-logo {
+    height: 60px;
+    padding: 2px;
+  }
+
+  #m .static-logos .trust-logo img {
+    height: 52px !important;
+    max-height: 52px !important;
+  }
+}
+/* Events page: upcoming event cards match the home page event cards */
+#m .up > .ev {
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr) !important;
+  gap: 40px;
+  align-items: center;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  background: #fff;
+}
+
+#m .up > .ev + .ev {
+  margin-top: 48px;
+}
+
+#m .up > .ev .event-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/5;
+  border-radius: 0 !important;
+}
+
+#m .up > .ev .event-photo img {
+  border-radius: 0 !important;
+  object-fit: cover;
+}
+
+#m .up > .ev h2 {
+  margin: 8px 0 6px;
+}
+
+@media (max-width: 960px) {
+  #m .up > .ev {
+    grid-template-columns: minmax(0, 240px) minmax(0, 1fr) !important;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  #m .up > .ev {
+    grid-template-columns: 1fr !important;
+    gap: 18px;
+  }
+
+  #m .up > .ev .event-photo {
+    max-width: 360px;
+  }
+}
+/* Event cards (home and events page): image pinned to the top, 24px padding all round */
+#m .featured-events > .ev,
+#m .up > .ev {
+  align-items: start !important;
+  padding: 24px !important;
+}
+
+#m .featured-events > .ev .event-photo,
+#m .up > .ev .event-photo {
+  align-self: start;
+}
+/* Event cards: smooth rounded corners, no border line */
+#m .featured-events > .ev,
+#m .up > .ev {
+  border: 0 !important;
+  border-radius: 18px !important;
+  overflow: hidden;
+}
+
+#m .featured-events > .ev .event-photo,
+#m .up > .ev .event-photo,
+#m .featured-events > .ev .event-photo img,
+#m .up > .ev .event-photo img {
+  border-radius: 12px !important;
+}
+/* Past events: arrow-button slider; arrows disable at the first and last card */
+#m .ps .pe-slider {
+  position: relative;
+  margin-top: 26px;
+}
+
+#m .ps .pe-slider .pe {
+  margin-top: 0;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+#m .ps .pe-slider .pe::-webkit-scrollbar {
+  display: none;
+}
+
+#m .ps .pe-slider .pc {
+  cursor: default;
+}
+
+#m .pe-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-top: -24px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #7a1050;
+  font-size: 30px;
+  line-height: 1;
+  box-shadow: 0 8px 24px #17131a33;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+#m .pe-arrow:hover:not(:disabled) {
+  background: #7a1050;
+  color: #fff;
+  transform: scale(1.06);
+}
+
+#m .pe-arrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: 0 4px 12px #17131a1f;
+}
+
+#m .pe-arrow:focus-visible {
+  outline: 3px solid #005b74;
+  outline-offset: 3px;
+}
+
+#m .pe-prev {
+  left: -12px;
+}
+
+#m .pe-next {
+  right: -12px;
+}
+
+@media (max-width: 560px) {
+  #m .pe-prev {
+    left: 4px;
+  }
+
+  #m .pe-next {
+    right: 4px;
+  }
+
+  #m .pe-arrow {
+    width: 42px;
+    height: 42px;
+    margin-top: -21px;
+    font-size: 26px;
+  }
+}

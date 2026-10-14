@@ -11,7 +11,6 @@ window.BWAW = window.BWAW || {};
     ["muntz-associates.png", "Muntz and Associates"],
     ["campbells.png", "Campbells of Rutherglen"],
     ["gr.png", "GR"],
-    ["laurae-healy-art.png", "Laurae Healy Art"],
     ["hume-bank.png", "Hume Bank"],
     ["regent-cinemas.png", "Regent Cinemas"],
     ["pinpoint-finance.png", "Pinpoint Finance"],
@@ -70,7 +69,12 @@ window.BWAW = window.BWAW || {};
           d = Math.abs(p - c) * n;
         let o = Math.min(1, Math.max(0, (0.5 - d) / 0.2));
         if (e.id === "story" && i === 0 && p < 0.2) o = 1;
-        const y = (c - p) * n * 70;
+        let y = (c - p) * n * 70;
+        if (e.id === "stack" && n === 2) {
+          const t = Math.min(1, Math.max(0, (p - 0.3) / 0.4));
+          o = i === 0 ? 1 - t : t;
+          y = i === 0 ? -t * 60 : (1 - t) * 60;
+        }
         g.style.opacity = o;
         g.classList.toggle("on", o > 0.6);
         g.style.transform = `translateY(calc(-50% + ${y}px))`;
@@ -267,7 +271,7 @@ window.BWAW = window.BWAW || {};
   function rotateSponsorLogos() {
     clearInterval(sponsorTimer);
     if (matchMedia("(prefers-reduced-motion:reduce)").matches) return;
-    const slots = [...document.querySelectorAll(".trust-logo img")];
+    const slots = [...document.querySelectorAll(".trusted-logos:not(.static-logos) .trust-logo img")];
     if (!slots.length) return;
     sponsorTimer = setInterval(() => {
       const slot = slots[Math.floor(Math.random() * slots.length)];

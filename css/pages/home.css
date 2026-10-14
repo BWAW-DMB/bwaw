@@ -39,21 +39,6 @@
   text-align: center;
 }
 
-#m .featured-event-card {
-  grid-template-columns: 300px 1fr;
-  padding: 60px 0;
-}
-
-#m .featured-event-title {
-  margin: 6px 0;
-}
-
-#m .featured-event-text {
-  font-size: 11.5px;
-  color: #666;
-  margin: 12px 0;
-}
-
 #m .purpose-columns {
   grid-template-columns: 0.9fr 1.1fr;
   gap: 70px;

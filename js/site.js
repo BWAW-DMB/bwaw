@@ -43,6 +43,32 @@ window.BWAW = window.BWAW || {};
     });
   };
 
+  /* Past events: arrow-button slider (arrows disable at the first and last card). */
+  function setupPastEventSlider(root) {
+    const track = root.querySelector("#past-events .pe");
+    if (!track) return;
+    const slider = track.closest(".pe-slider");
+    const step = () => {
+      const card = track.querySelector(".pc");
+      if (!card) return track.clientWidth;
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      return card.getBoundingClientRect().width + gap;
+    };
+    const prev = slider.querySelector(".pe-prev"),
+      next = slider.querySelector(".pe-next");
+    const update = () => {
+      const max = track.scrollWidth - track.clientWidth;
+      prev.disabled = track.scrollLeft <= 4;
+      next.disabled = track.scrollLeft >= max - 4;
+    };
+    const go = (dir) => track.scrollBy({ left: dir * step(), behavior: "smooth" });
+    prev.addEventListener("click", () => go(-1));
+    next.addEventListener("click", () => go(1));
+    track.addEventListener("scroll", () => requestAnimationFrame(update), { passive: true });
+    addEventListener("resize", update);
+    update();
+  }
+
   /* Upcoming events: clamp long descriptions with a "See more" button. */
   function setupEventDescriptions(root) {
     root.querySelectorAll(".up .ev p:not(.event-copy-full)").forEach((p) => {
@@ -164,6 +190,7 @@ window.BWAW = window.BWAW || {};
   /* Start-up. */
   const main = $("#m");
   setupEventDescriptions(main);
+  setupPastEventSlider(main);
   main
     .querySelectorAll(".contact-copy-card")
     .forEach((button) => button.addEventListener("click", () => copyContactEmail(button)));
