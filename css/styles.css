@@ -6554,3 +6554,17 @@ footer :focus-visible {
     font-size: 26px;
   }
 }
+/* Event cards always stack in a single column (home and events page) */
+#m .featured-event.featured-events {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 48px;
+}
+
+#m .featured-events > .ev,
+#m .up > .ev {
+  display: grid !important;
+  width: 100%;
+  box-sizing: border-box;
+}
